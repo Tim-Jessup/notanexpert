@@ -1,0 +1,39 @@
+{{ define "main" }}
+<section>
+    <h2>Welcome</h2>
+    <p>This is where I experiment, learn in public, and share prototypes. Nothing here is finished, polished, or claims to be authoritative. Just curious exploration of ideas that caught my attention.</p>
+    
+    <h3>What you'll find here:</h3>
+    <p><strong>Projects</strong> - Experimental builds and prototypes I'm tinkering with</p>
+    <p><strong>Tools</strong> - Small utilities and calculators that might be useful</p>
+    <p><strong>Notes</strong> - Learning notes, thinking out loud, and rough documentation</p>
+</section>
+
+<section>
+    <h2>Recent Projects</h2>
+    <ul class="project-list">
+        {{ range first 3 (where .Site.RegularPages "Type" "projects") }}
+        <li class="project-item">
+            <h3 class="project-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <div class="project-meta">{{ .Date.Format "January 2006" }}</div>
+            <div class="project-description">{{ .Summary }}</div>
+        </li>
+        {{ end }}
+    </ul>
+    <p><a href="/projects/">See all projects →</a></p>
+</section>
+
+<section>
+    <h2>Recent Notes</h2>
+    <ul class="note-list">
+        {{ range first 3 (where .Site.RegularPages "Type" "notes") }}
+        <li class="note-item">
+            <h3 class="note-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <div class="note-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+            <div class="note-description">{{ .Summary }}</div>
+        </li>
+        {{ end }}
+    </ul>
+    <p><a href="/notes/">See all notes →</a></p>
+</section>
+{{ end }}

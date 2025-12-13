@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article>
+    <h2>{{ .Title }}</h2>
+    <div class="{{ .Type }}-meta">{{ .Date.Format "January 2, 2006" }}</div>
+    
+    {{ .Content }}
+    
+    {{ if .Params.github }}
+    <p><a href="{{ .Params.github }}" target="_blank">View on GitHub →</a></p>
+    {{ end }}
+</article>
+{{ end }}

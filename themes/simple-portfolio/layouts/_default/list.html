@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h2>{{ .Title }}</h2>
+
+{{ .Content }}
+
+<ul class="{{ .Type }}-list">
+    {{ range .Pages }}
+    <li class="{{ $.Type }}-item">
+        <h3 class="{{ $.Type }}-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <div class="{{ $.Type }}-meta">{{ .Date.Format "January 2, 2006" }}</div>
+        <div class="{{ $.Type }}-description">{{ .Summary }}</div>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
