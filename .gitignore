@@ -18,3 +18,4 @@ Thumbs.db
 # Temporary files
 *.bak
 *.tmp
+.hugo_build.lock
