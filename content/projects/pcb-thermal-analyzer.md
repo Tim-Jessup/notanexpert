@@ -1,31 +1,29 @@
 ---
 title: "PCB Thermal Analyzer"
-date: 2024-11-15
-github: "https://github.com/yourusername/pcb-thermal-analyzer"
+date: 2025-11-02
+github: Currently private
 ---
 
-A Python tool for analyzing thermal performance of PCB designs. Started because I needed to predict hotspots on ESC boards before fabrication.
+A Python tool for analyzing thermal performance of PCB designs. Started because I wanted to predict hotspots on ESC boards before fabrication.
 
 ## What it does
 
-Takes a PCB layout and copper layer stack-up, runs thermal simulations with adaptive meshing to find problem areas. Still rough around the edges but getting useful results.
+Takes a PCB layout and copper layer stack-up, runs thermal simulations with adaptive meshing to find problem areas. Only a basic prototype so far. Mostly I was just testing Claude's coding abilities on a complex problem.
 
 ## Current status
 
 - Basic adaptive meshing works
-- Can import common PCB file formats
-- Thermal visualization needs work
-- Documentation is... aspirational
+- Can import KiCAD PCB file formats
+- Probably lying to me
 
 ## What I learned
 
-Thermal analysis is harder than it looks. Convection modeling is tricky. Adaptive meshing makes a huge difference in simulation time.
+Size of grid makes a huge difference in simulation time. Claude is getting very impressive. Need an adaptive grid to get good details for PCB work. Lots of potential for future projects with Kicad.
 
 ## Next steps
 
-- Better visualization
-- Support for multi-layer boards
+- Check if outputs are actually legit
+- Work on better visualisation
 - Validate against real measurements
-- Actually write the documentation
 
-This is very much a work in progress. Use at your own risk.
+Probably non-functional. Do not trust.

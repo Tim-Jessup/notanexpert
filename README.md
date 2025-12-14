@@ -1,8 +1,8 @@
-# notanexpert.fyi - Hugo Site
+# notanexpert.fyi - My Experimental Site
 
 A simple, clean portfolio site for sharing experiments, tools, and learning notes.
 
-## Quick Start
+## Quick Start if you want to make the same thing
 
 ### 1. Install Hugo
 
