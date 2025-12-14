@@ -1,7 +1,7 @@
 ---
 title: "InvenTree Email Lookup Extension"
-date: 2024-12-10
-github: "https://github.com/yourusername/inventree-lookup"
+date: 2025-12-10
+github: "https://github.com/Tim-Jessup/inventree-lookup"
 ---
 
 Chrome extension that finds part numbers in emails and looks them up in our company's InvenTree system. Built because I was tired of manually copying and searching part numbers all day.
@@ -13,18 +13,18 @@ Scans emails for patterns that look like part numbers, adds little popup buttons
 ## Features
 
 - Pattern recognition for various reference formats
-- Keyboard shortcuts (Ctrl+Shift+L)
-- Works with Gmail, Outlook
+- Context menu for selected text
+- Keyboard shortcuts (Alt + I)
 - Configurable patterns
 
 ## Lessons learned
 
-Regular expressions are both powerful and painful. Chrome extension APIs are surprisingly well-documented. JavaScript's type coercion still catches me out sometimes.
+Chrome omnibox, reassignable shortcuts, extension structure, How good are custom extensions??
 
 ## Could be better
 
-- Firefox support would be nice
-- Better pattern customization UI
-- More robust error handling
+- Could expand to other browsers
+- Fallback search could go to an actual search page, but Inventree says no
+- Need to check some errors
 
 Works for what I need it for. Maybe it'll help someone else too.
