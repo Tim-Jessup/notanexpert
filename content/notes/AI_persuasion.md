@@ -1,7 +1,6 @@
 ---
-title: "Flashcard App"
-date: 2025-12-14
-github: "https://flashcards-omega-two.vercel.app/"
+title: "AI Persuasion"
+date: 2025-12-13
 ---
 
 I recently took part in a tabletop game at an Effective Altruism conference, where we were essentially playing out the scenario described in [AI 2027](https://ai-2027.com/). One of my big takeaways was just how, as soon as someone gets and deploys AI that is incredibly persuasive, they are nearly unstoppable. As a force for manipulating or disempowering the populace, it could be insanely powerful. As a precise tool to sway leaders to your way of thinking, it could be an easy winning strategy.
